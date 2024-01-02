@@ -596,7 +596,7 @@ const Home = () => {
           <C.Logo>Seipents</C.Logo>
           {wallet === null && (
             <C.WalletConnect onClick={openWalletConnect}>
-              Connect Wallet
+              Connect
             </C.WalletConnect>
           )}
           {wallet !== null && (

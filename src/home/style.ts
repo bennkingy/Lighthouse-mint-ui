@@ -76,8 +76,10 @@ export const WalletConnect = styled.button`
     display:flex;
     align-items:center;
     border-radius:8px;
-    font-size:14px;
+    font-size:18px;
     font-weight:500;
+      font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     cursor:pointer;
     transition:all .1s ease-in-out;
     &:hover{
