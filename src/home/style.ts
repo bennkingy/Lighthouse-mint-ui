@@ -3,9 +3,13 @@ import { color } from "styles/theme"
 import { Hex2Rgba } from "utils/helpers"
 
 export const Home = styled.div`
-    background-color: ${color.bg};
+    // background-color: ${color.bg};
+    background-image:url('/images/background.jpg');
+    background-size:cover;
+    background-position:center center;
     min-height:100vh;
     height:100%;
+    padding-bottom: 20px;
 `
 
 export const Bg = styled.div`
@@ -19,7 +23,6 @@ export const Bg = styled.div`
     justify-content:center;
     align-items:flex-start;
     overflow:hidden;
-
     & svg{
         position:absolute;
         top:0;
@@ -56,8 +59,12 @@ export const Header = styled.div`
     }
 `
 
-export const Logo = styled.img`
+export const Logo = styled.h1`
     width:147px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
 `
 
 export const WalletConnect = styled.button`
@@ -104,9 +111,11 @@ export const WAddress = styled.div`
     color:${color.black};
 `
 
-export const Launch = styled.div<{showMintedNfts?:string}>`
+export const Launch = styled.div<{ showMintedNfts?: string }>`
+    opacity:0.9;
     margin-top:16px;
-    min-height:769px;
+    // min-height:769px;
+    min-height:569px;
     background: linear-gradient(180deg, #15232D 0%, #0A141B 100%);
     box-shadow: 0px 11.8109px 53.1492px rgba(0, 0, 0, 0.35);
     border-radius: 16px;
