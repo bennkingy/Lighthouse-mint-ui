@@ -833,7 +833,7 @@ const Home = () => {
           )}
         </C.Launch> */}
 
-        <C.ComingSoon>Minting sssoon!</C.ComingSoon>
+        <C.ComingSoon>Minting sssoon...</C.ComingSoon>
       </C.Container>
 
       {showMintedModal && (
