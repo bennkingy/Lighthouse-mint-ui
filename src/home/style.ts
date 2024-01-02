@@ -60,16 +60,17 @@ export const Header = styled.div`
 `
 
 export const Logo = styled.h1`
-    width:147px;
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 40px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+    text-align: center;
 `
 
 export const WalletConnect = styled.button`
     background-color:${color.primary};
-    color:${color.black};
+    color:${color.white};
     padding:0px 24px;
     height:43px;
     display:flex;
@@ -114,8 +115,6 @@ export const WAddress = styled.div`
 export const Launch = styled.div<{ showMintedNfts?: string }>`
     opacity:0.9;
     margin-top:16px;
-    // min-height:769px;
-    min-height:569px;
     background: linear-gradient(180deg, #15232D 0%, #0A141B 100%);
     box-shadow: 0px 11.8109px 53.1492px rgba(0, 0, 0, 0.35);
     border-radius: 16px;
