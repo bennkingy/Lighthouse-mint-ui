@@ -11,7 +11,6 @@ import { useWalletConnect } from 'hooks/walletConnect';
 import { MerkleTree } from 'merkletreejs';
 import { useEffect, useRef, useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { Bg } from 'styles/bg';
 import * as C from './style';
 
 const LIGHTHOUSE_CONTRACT_ATLANTIC_2 =
@@ -584,9 +583,9 @@ const Home = () => {
 
   return (
     <C.Home>
-      <C.Bg>
+      {/* <C.Bg>
         <Bg />
-      </C.Bg>
+      </C.Bg> */}
       <C.Container>
         <C.Header>
           <C.Logo>Seipents</C.Logo>
