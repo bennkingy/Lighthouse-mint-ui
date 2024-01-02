@@ -1,14 +1,10 @@
 import { SigningCosmWasmClient } from '@cosmjs/cosmwasm-stargate';
 import { GasPrice } from '@cosmjs/stargate';
-import { faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faCircleNotch, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { keccak_256 } from '@noble/hashes/sha3';
 import { getSigningCosmWasmClient } from '@sei-js/core';
 import axios from 'axios';
 import BigNumber from 'bignumber.js';
 import MintedModal from 'components/mintedModal';
-import { Timer } from 'components/timer';
 import Wallet, { DropdownItem } from 'components/wallet';
 import config from 'config.json';
 import { useWalletConnect } from 'hooks/walletConnect';
@@ -623,7 +619,7 @@ const Home = () => {
             </Wallet>
           )}
         </C.Header>
-        <C.Launch showMintedNfts={showMintedNfts ? 'true' : 'false'}>
+        {/* <C.Launch showMintedNfts={showMintedNfts ? 'true' : 'false'}>
           {loading && (
             <C.Loading>
               <FontAwesomeIcon icon={faCircleNotch} spin />
@@ -835,7 +831,7 @@ const Home = () => {
               )}
             </>
           )}
-        </C.Launch>
+        </C.Launch> */}
       </C.Container>
 
       {showMintedModal && (
