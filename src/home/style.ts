@@ -64,7 +64,23 @@ export const Logo = styled.h1`
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: 300;
     font-size: 40px;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+        @media (max-width: 768px) {
+         font-size: 40px;
+    }
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
+    text-align: center;
+`
+
+
+export const ComingSoon = styled.h1`
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    @media (max-width: 768px) {
+         font-size: 45px;
+    }
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
     text-align: center;
 `
 

@@ -18,7 +18,6 @@ export const Wallet = styled.div`
         background-color:${Hex2Rgba(color.primary, .5)};
     }
 `
-
 export const WBalance = styled.div`
     padding:5px 16px;
     background-color:${color.secondaryLight};
